@@ -7,12 +7,14 @@ const FormLogin = () =>{
         <InputForm label="Email"
         type="email"
         placeholder="example@mail.com"
-        name="email"/>
+        name="email"
+        autoComplete="current-email"/>
         <InputForm label="Password"
         type="password"
         placeholder="******"
-        name="password"/>
-      <Button classname="bg-zinc-800 w-full hover:bg-black">Login</Button>
+        name="password"
+        autoComplete="current-password"/>
+      <Button classname="bg-zinc-800 w-full  hover:bg-black">Login</Button>
       </form>
     )
 }
