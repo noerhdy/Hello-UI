@@ -1,11 +1,14 @@
 import React from "react";
+import MainLayout from "../../components/Layout/MainLayout";
+import FooterSection from "../../components/Fragment/FooterSection";
 
 const HomePage = () => {
   return (
-    <div className="w-100 h-svh flex justify-center items-center bg-blue-500">
-      <div className="card"></div>
-      <p className="text-zinc-900  ">Home Page</p>
-    </div>
+    <>
+<MainLayout/>
+<FooterSection/>
+</>
+    
   );
 };
 
