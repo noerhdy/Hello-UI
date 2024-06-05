@@ -8,7 +8,7 @@ const RoutesCon = () => {
     <>
       <Router>
         <Routes>
-          <Route index element={<HomePage />} />
+          {/* <Route index element={<HomePage />} /> */}
           <Route path="/" element={<MainApp />} >
             <Route path="create-blog" element={<CreateBlog/>}/>
             <Route path="detail-blog" element={<DetailBlog/>}/>
