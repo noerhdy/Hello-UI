@@ -7,12 +7,12 @@ const CardMain = () => {
     <CardIndex
    imgUrl="imageBlog/sec2.webp"
    titleName="Helloooo"
-   titleText="ahaaayyyy"
+   titleText="Lorem ipsum dolor sit ametc"
    />
     <CardIndex
    imgUrl="imageBlog/sec2.webp"
    titleName="Helloooo"
-   titleText="ahaaayyyy"
+   titleText="ahaaayyyy isicing"
    />
     <CardIndex
    imgUrl="imageBlog/sec2.webp"
