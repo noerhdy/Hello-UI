@@ -9,13 +9,13 @@ export const colorFirst =
 const CtaLink = () => {
   return (
     <div
-      className={`${colorFirst} group flex py-1 px-2 h-8 w-24 rounded duration-500   items-center hover:delay-300 hover:w-1/2  hover:h-12 hover:rounded-xl  hover:justify-start ease-in-out overflow-hidden`}
+      className={`${colorFirst} group flex py-1 px-2 h-8 w-24 rounded duration-500   items-center hover:delay-300 hover:w-72  hover:h-12 hover:rounded-xl  hover:justify-start ease-in-out overflow-hidden`}
     >
       <span className="z-20 absolute group-hover:delay-300 translate-x-2 group-hover:duration-300">
         Lets Talk
       </span>
       <div
-        className="space-x-4  opacity-0 translate-x-52 group-hover:translate-x-52 -translate-y-2 group-hover:translate-y-0 mx-2  group-hover:opacity-100 group-hover:ease-in-out 
+        className="space-x-4  opacity-0 translate-x-32 group-hover:translate-x-32 -translate-y-2 group-hover:translate-y-0 mx-2  group-hover:opacity-100 group-hover:ease-in-out 
       group-hover:delay-1000
       group-hover:duration-700 overflow-hidden group-hover:block  "
       >
