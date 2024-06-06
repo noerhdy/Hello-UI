@@ -1,33 +1,22 @@
+import { LogOut } from "lucide-react";
 import React from "react";
-import { Outlet } from "react-router-dom";
-
-
 
 function NavbarSection() {
   return (
-    <header>
-      <nav>
-        <div className=" py-12  px-6 sm:px-32 fixed inset-x-0 z-50 justify-between items-center flex text-color  bg-neutral-50 dark:bg-zinc-950 dark:text-white">
-          <div className=" ">
-           
-              <h1 className="text-2xl font-normal hover:text-zinc-600  tracking-tighter ease-in-out duration-300 transition-all">
-                Zen
-              </h1>
-          </div>
-          <div className="flex items-center gap-8">
-        
-              <span className="hover:text-zinc-600 font-normal  ease-in-out duration-300 transition-all">
-                About
-              </span>
-            <span
-              className="text-zinc-400 dark:hover:text-neutral-600 dark:text-zinc-400 hover:text-zinc-600 cursor-pointer"
-            >
-            </span>
-          </div>
+    <section className="flex flex-col items-center bg-[#f7f7f7] dark:bg-zinc-950">
+      <div className="w-full z-50 max-w-screen-sm m-2 flex justify-end">
+        <div
+          className="flex p-2 mr-4 w-fit rounded-md duration-200
+        dark:text-zinc-600 dark:hover:text-black 
+        text-zinc-600 hover:text-black
+        dark:bg-zinc-800 dark:hover:bg-[#adfa1d]
+        bg-neutral-200 hover:bg-neutral-300
+        "
+        >
+          <LogOut size={16} />
         </div>
-      </nav>
-      <Outlet />
-    </header>
+      </div>
+    </section>
   );
 }
 
