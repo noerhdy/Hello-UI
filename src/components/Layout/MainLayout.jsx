@@ -1,28 +1,17 @@
 import React from "react";
 import { useEffect } from "react";
 import Axios from "axios";
-import { useState } from "react";
 import CardIndex from "../Elements/card/CardIndex";
 import { useSelector, useDispatch } from "react-redux";
 
 const MainLayout = () => {
-  // const [dataBlog, setDataBlog] = useState([]);
-  const { dataBlogs, name } = useSelector((state) => state);
+  const { dataBlog } = useSelector((state) => state.homeReducer);
   const dispatch = useDispatch();
 
-  console.log("data blog global : ", dataBlogs);
-
   useEffect(() => {
-    setTimeout(() => {
-      dispatch({ type: "UPDATE_NAME" });
-    }, 3000);
-
     Axios.get("http://localhost:4000/v1/blog/posts")
       .then((result) => {
-        console.log("Data API", result.data);
         const responseApi = result.data;
-
-        // setDataBlog(responseApi.data);
         dispatch({ type: "UPDATE_DATA_BLOG", payload: responseApi.data });
       })
       .catch((err) => {
@@ -41,7 +30,6 @@ const MainLayout = () => {
             <h1 className="font-bold text-5xl text-black dark:text-white">
               Ma Favorite Cookie
             </h1>
-            <p>{name}</p>
             <p className="text-xl text-black dark:text-zinc-600 text-pretty">
               Lorem ipsum dolor sit amet consectetur adipisicing eli
             </p>
@@ -51,7 +39,7 @@ const MainLayout = () => {
 
       <div className="max-w-screen-md  pb-12  text-balance space-y-6">
         <div className="flex flex-wrap justify-center gap-2 py-2">
-          {dataBlogs.map((blog) => {
+          {dataBlog.map((blog) => {
             return (
               <CardIndex
                 key={blog._id}
