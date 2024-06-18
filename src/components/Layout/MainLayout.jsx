@@ -1,23 +1,16 @@
 import React from "react";
 import { useEffect } from "react";
-import Axios from "axios";
 import CardIndex from "../Elements/card/CardIndex";
 import { useSelector, useDispatch } from "react-redux";
+import { setDataBlog } from "@/config/Redux/Action";
 
 const MainLayout = () => {
   const { dataBlog } = useSelector((state) => state.homeReducer);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    Axios.get("http://localhost:4000/v1/blog/posts")
-      .then((result) => {
-        const responseApi = result.data;
-        dispatch({ type: "UPDATE_DATA_BLOG", payload: responseApi.data });
-      })
-      .catch((err) => {
-        console.log("Error", err);
-      });
-  }, []);
+    dispatch(setDataBlog());
+  }, [dispatch]);
   return (
     <section className=" flex flex-col min-h-screen items-center  bg-[#f7f7f7] dark:bg-zinc-950 ">
       <div className="w-full max-w-screen-md bg-[#f7f7f7] dark:bg-zinc-950 text-balance">
