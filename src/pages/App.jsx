@@ -1,10 +1,13 @@
-import { RoutesCon } from "../config";
+import { Provider } from "react-redux";
+import { RoutesCon, store } from "../config";
 import React from "react";
 
 function App() {
   return (
     <>
-      <RoutesCon />
+      <Provider store={store}>
+        <RoutesCon />
+      </Provider>
     </>
   );
 }
