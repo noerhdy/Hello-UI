@@ -1,4 +1,4 @@
-import { LogOut } from "lucide-react";
+import { User } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -9,13 +9,10 @@ function NavbarSection() {
         <Link to="create-blog">
           <div
             className="flex p-2 mr-4 w-fit rounded-md duration-200
-        dark:text-zinc-600 dark:hover:text-black 
-        text-zinc-600 hover:text-black
-        dark:bg-zinc-800 dark:hover:bg-[#adfa1d]
         bg-neutral-200 hover:bg-neutral-300
         "
           >
-            <LogOut size={16} />
+            <User size={16} />
           </div>
         </Link>
       </div>

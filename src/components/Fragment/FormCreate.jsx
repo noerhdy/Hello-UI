@@ -62,13 +62,14 @@ const FormCreate = () => {
         onChange={(e) => onImageUpload(e)}
         imgUrl={imagePreview}
       />
+
       <Textarea
         value={body}
         onChange={(e) => setBody(e.target.value)}
         placeholder="Type your message here."
       />
       <Button
-        className="bg-zinc-800 dark:bg-[#ADFA1D] dark:hover:bg-[#72a514] dark:text-black w-full my-4 hover:bg-black"
+        classname=" my-6 bg-neutral-200 hover:bg-neutral-300 text-zinc-950 w-full "
         type="submit"
       >
         Submit

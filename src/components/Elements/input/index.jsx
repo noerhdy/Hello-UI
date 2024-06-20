@@ -9,7 +9,7 @@ const InputForm = (props) => {
     placeholder,
     autoComplete,
     accept,
-    value,
+
     onChange,
   } = props;
   return (
