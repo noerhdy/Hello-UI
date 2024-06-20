@@ -1,28 +1,76 @@
-import React from "react";
+import React, { useState } from "react";
 import InputForm from "../Elements/input";
 import Button from "../Elements/Button/ButtonIndex";
 import { Textarea } from "../ui/textarea";
-import CardImage from "../Elements/card/CardImage";
+import Axios from "axios";
+import CardForm from "../Elements/card/CardForm";
 
 const FormCreate = () => {
+  const [title, setTitle] = useState("");
+  const [body, setBody] = useState("");
+  const [image, setImage] = useState("");
+  const [imagePreview, setImagePreview] = useState("");
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    console.log("Title:", title);
+    console.log("Body:", body);
+    console.log("image:", image);
+
+    // Add your form submission logic here
+    const data = new FormData();
+    // append = add new object
+    data.append("title", title);
+    data.append("body", body);
+    data.append("image", image);
+
+    Axios.post("http://localhost:4000/v1/blog/post", data, {
+      headers: {
+        "content-type": "multipart/form-data",
+      },
+    })
+      .then((res) => {
+        console.log("post-success :", res);
+      })
+      .catch((err) => {
+        console.log("err :", err);
+      });
+  };
+
+  const onImageUpload = (e) => {
+    const file = e.target.files[0];
+    setImage(file);
+    setImagePreview(URL.createObjectURL(file));
+  };
+
   return (
-    <form action="">
+    <form onSubmit={onSubmit}>
       <InputForm
         label="Post Title"
         type="text"
         placeholder="title name"
-        name="text"
-        autoComplete="current-text"
+        name="title"
+        autoComplete="current-title"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
       />
-      <InputForm
+      <CardForm
         type="file"
         name="file"
         autoComplete="file"
         accept=".jpg, .jpeg, .png, .svg, .webp, .avif"
+        onChange={(e) => onImageUpload(e)}
+        imgUrl={imagePreview}
       />
-      <CardImage imgUrl="imageBlog/sec2.webp" />
-      <Textarea placeholder="Type your message here." />
-      <Button classname="bg-zinc-800 dark:bg-[#ADFA1D] dark:hover:bg-[#72a514] dark:text-black  w-full my-4 hover:bg-black">
+      <Textarea
+        value={body}
+        onChange={(e) => setBody(e.target.value)}
+        placeholder="Type your message here."
+      />
+      <Button
+        className="bg-zinc-800 dark:bg-[#ADFA1D] dark:hover:bg-[#72a514] dark:text-black w-full my-4 hover:bg-black"
+        type="submit"
+      >
         Submit
       </Button>
     </form>

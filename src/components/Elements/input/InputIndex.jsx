@@ -1,7 +1,7 @@
 import React from "react";
 
 const Input = (props) => {
-  const { type, placeholder, name, autoComplete, accept } = props;
+  const { type, placeholder, name, autoComplete, accept, onChange } = props;
   return (
     <input
       type={type}
@@ -10,6 +10,7 @@ const Input = (props) => {
       name={name}
       autoComplete={autoComplete}
       accept={accept}
+      onChange={onChange}
     />
   );
 };

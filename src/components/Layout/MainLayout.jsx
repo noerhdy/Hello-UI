@@ -39,6 +39,7 @@ const MainLayout = () => {
                 imgUrl={`http://localhost:4000/${blog.image}`}
                 titleName={blog.title}
                 titleText={blog.body}
+                link="detail-blog"
               />
             );
           })}
