@@ -12,15 +12,15 @@ const CardMain = () => {
         </h2>
       </div>
       <CardClick
-        defaultImg="./IMG/zen-wire.jpg"
-        clickImg="./IMG/zen.jpg"
+        defaultImg="./IMG/zen-wire.webp"
+        clickImg="./IMG/zen.webp"
         titleName="Zen layout"
         titleText="Design"
         titleText2="Development"
       />
       <CardClick
-        defaultImg="./IMG/ayuki-wire.jpg"
-        clickImg="./IMG/ayuki.jpg"
+        defaultImg="./IMG/ayuki-wire.webp"
+        clickImg="./IMG/ayuki.webp"
         titleName="Ayuki (Single Page)"
         titleText="Design"
         titleText2="Development"
@@ -31,16 +31,16 @@ const CardMain = () => {
         titleText="Design"
       />
       <CardIndex
-        imgUrl="./IMG/af.jpg"
+        imgUrl="./IMG/af.webp"
         titleName="AS (Landing Page)"
         titleText="Design"
       />
       <div className="text-zinc-400 pt-12 w-2/3 font-mono items-center text-[12px]">
         <h2>Other</h2>
       </div>
-      <CardIndex imgUrl="./IMG/sec5.jpg" titleName="WF " titleText="..." />
-      <CardIndex imgUrl="./IMG/sec6.jpg" titleName="Vctr " titleText="..." />
-      <CardIndex imgUrl="./IMG/sec7.jpg" titleName="Swift " titleText="..." />
+      <CardIndex imgUrl="./IMG/sec5.webp" titleName="WF " titleText="..." />
+      <CardIndex imgUrl="./IMG/sec6.webp" titleName="Vctr " titleText="..." />
+      <CardIndex imgUrl="./IMG/sec7.webp" titleName="Swift " titleText="..." />
     </>
   );
 };
