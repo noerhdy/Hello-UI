@@ -5,6 +5,13 @@
 @tailwind utilities;
 
 body {
+  -ms-overflow-style: none;
   font-family: "Geist Mono Variable";
 }
 /* For Geist Mono */
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
