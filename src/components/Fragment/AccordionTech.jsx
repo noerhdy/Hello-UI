@@ -20,14 +20,9 @@ export function AccordionTech() {
         <AccordionContent>
           <div className="flex flex-col border-t py-4">
             {dataTech.map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-row space-x-2 text-sm space-y-2 items-center "
-              >
-                <div className="flex-1 ">
+              <div key={index} className="flex items-center ">
+                <div className="flex justify-between w-full py-2 px-4">
                   <h2>{item.item1}</h2>
-                </div>
-                <div className="flex-1 text-end">
                   <h2>{item.item2}</h2>
                 </div>
               </div>

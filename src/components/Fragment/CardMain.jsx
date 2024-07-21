@@ -26,8 +26,13 @@ const CardMain = () => {
         titleText2="Development"
       />
       <CardIndex
-        imgUrl="./IMG/sec3.webp"
+        imgUrl="./IMG/sec9.webp"
         titleName="Dhome (Landing Page)"
+        titleText="Design"
+      />
+      <CardIndex
+        imgUrl="./IMG/sec8.webp"
+        titleName="AS (Landing Page)"
         titleText="Design"
       />
       <CardIndex
