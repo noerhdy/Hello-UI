@@ -1,26 +1,35 @@
-export const dataContact = [
+export const marqImage = [
   {
-    name: "Github",
-    url: "https://github.com/noerhdy",
-    src: "/img/app/git.webp",
+    id: 1,
+    title: "Black",
+    image: "/IMG/marquee/thumb1.webp",
   },
   {
-    name: "Linkedin",
-    url: "https://www.linkedin.com/in/nur-hidayat21/",
-    src: "/img/app/in.webp",
+    id: 2,
+    title: "Matcha",
+    image: "/IMG/marquee/thumb2.webp",
   },
   {
-    name: "Twitter",
-    url: "https://twitter.com/Noer1114",
-    src: "/img/app/x.webp",
+    id: 3,
+    title: "Necta",
+    image: "/IMG/marquee/thumb3.webp",
   },
   {
-    name: "Gmail",
-    url: "https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=hidayatnoer11@gmail.com",
-    src: "/img/app/gm.webp",
+    id: 4,
+    title: "Black",
+    image: "/IMG/marquee/thumb8.webp",
+  },
+  {
+    id: 5,
+    title: "Matcha",
+    image: "/IMG/marquee/thumb7.webp",
+  },
+  {
+    id: 6,
+    title: "Necta",
+    image: "/IMG/marquee/thumb6.webp",
   },
 ];
-
 export const dataTech = [
   {
     item1: "Language",
@@ -39,21 +48,43 @@ export const dataTech = [
     item2: "Figma and Photoshop",
   },
 ];
-
-export const marqImage = [
+export const dataProfile = [
   {
-    id: 1,
-    title: "Black",
-    image: "/IMG/marquee/thumb1.webp",
+    item1: "Full name",
+    item2: "Nur Hidayat",
   },
   {
-    id: 2,
-    title: "Matcha",
-    image: "/IMG/marquee/thumb2.webp",
+    item1: "Location",
+    item2: "Surabaya, ID",
   },
   {
-    id: 3,
-    title: "Necta",
-    image: "/IMG/marquee/thumb3.webp",
+    item1: "Date of birth",
+    item2: "Oct 21, 1998",
+  },
+];
+export const dataContact = [
+  {
+    name: "Github",
+    url: "https://github.com/noerhdy",
+    src: "/img/app/git.webp",
+    icon: "github",
+  },
+  {
+    name: "Linkedin",
+    url: "https://www.linkedin.com/in/nur-hidayat21/",
+    src: "/img/app/in.webp",
+    icon: "linkedin",
+  },
+  {
+    name: "Twitter",
+    url: "https://twitter.com/Noer1114",
+    src: "/img/app/x.webp",
+    icon: "twitter",
+  },
+  {
+    name: "Gmail",
+    url: "https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=hidayatnoer11@gmail.com",
+    src: "/img/app/gm.webp",
+    icon: "mail",
   },
 ];

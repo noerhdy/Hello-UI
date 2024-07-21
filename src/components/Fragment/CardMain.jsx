@@ -38,9 +38,6 @@ const CardMain = () => {
       <div className="text-zinc-400 pt-12 w-2/3 font-mono items-center text-[12px]">
         <h2>Other</h2>
       </div>
-      <CardIndex imgUrl="./IMG/sec5.webp" titleName="WF " titleText="..." />
-      <CardIndex imgUrl="./IMG/sec6.webp" titleName="Vctr " titleText="..." />
-      <CardIndex imgUrl="./IMG/sec7.webp" titleName="Swift " titleText="..." />
     </>
   );
 };

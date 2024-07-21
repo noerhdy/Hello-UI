@@ -4,6 +4,7 @@ import { HeadersPage } from "../Fragment/HeadersPage";
 import TechSection from "../Fragment/TechSection";
 import CardMain from "../Fragment/CardMain";
 import MarqueeSection from "../Fragment/MarqueeSection";
+import NavDoc from "../NavDoc";
 
 const MainLayout = () => {
   return (
@@ -13,6 +14,7 @@ const MainLayout = () => {
         <CardMain />
         <MarqueeSection />
         <TechSection />
+        <NavDoc />
       </main>
     </div>
   );

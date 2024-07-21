@@ -1,4 +1,4 @@
-@import url("non.geist/mono");
+@import url("non.geist");
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,7 @@
 
 body {
   -ms-overflow-style: none;
-  font-family: "Geist Mono Variable";
+  font-family: "Geist";
 }
 /* For Geist Mono */
 ::-webkit-scrollbar {

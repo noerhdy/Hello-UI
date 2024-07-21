@@ -6,7 +6,7 @@ const ContactSection = () => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
-    <div className="flex space-x-4 items-center  w-fit mt-8">
+    <div className="flex space-x-4 items-center  text-[12px] max-w-screen-sm mt-8">
       {dataContact.map((contact, index) => (
         <button
           key={index}
