@@ -14,10 +14,9 @@ const NavDoc = () => {
   };
 
   const getSpanClassName = (index) => {
-    if (index === hoveredIndex) {
-      return "visible text-white p-1 text-sm -top-10 -ml-5 absolute px-2 rounded-md bg-[#37B59F]";
-    }
-    return "text-xs absolute -ml-5 -top-8 opacity-0";
+    return index === hoveredIndex
+      ? "visible text-white p-1 text-sm absolute -top-10 left-1/2 transform -translate-x-1/2 px-2 rounded-md bg-zinc-900 transition-opacity duration-300 opacity-100"
+      : "text-xs absolute -top-10 left-1/2 transform -translate-x-1/2 opacity-0 transition-opacity duration-300";
   };
 
   return (
@@ -26,11 +25,18 @@ const NavDoc = () => {
         <div
           onMouseEnter={() => handleMouseEnter(0)}
           onMouseLeave={handleMouseLeave}
-          className="relative space-x-2"
+          className="relative flex justify-center"
         >
           <ProfileModal />
+          <span className={getSpanClassName(0)}>Profile</span>
+        </div>
+        <div
+          onMouseEnter={() => handleMouseEnter(1)}
+          onMouseLeave={handleMouseLeave}
+          className="relative flex justify-center"
+        >
           <ModeToggle />
-          {/* <span className={getSpanClassName(0)}>Mode Toggle</span> */}
+          <span className={getSpanClassName(1)}>Switch</span>
         </div>
       </div>
     </div>

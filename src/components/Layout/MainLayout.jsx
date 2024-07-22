@@ -8,7 +8,7 @@ import NavDoc from "../NavDoc";
 
 const MainLayout = () => {
   return (
-    <div className=" flex flex-col min-h-screen items-center  bg-zinc-50  overflow-hidden">
+    <div className=" flex flex-col min-h-screen items-center bg-neutral-100 dark:bg-neutral-950 overflow-hidden">
       <main className="w-full max-w-screen-sm px-6">
         <HeadersPage />
         <CardMain />

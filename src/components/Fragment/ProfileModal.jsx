@@ -19,8 +19,8 @@ export function ProfileModal() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button size="icon" variant="outline" onClick={() => setOpen(true)}>
-          <PanelBottomClose className="h-[1.2rem] w-[1.2rem] transition-all" />
+        <Button size="icon" variant="default" onClick={() => setOpen(true)}>
+          <PanelBottomClose className="h-[1.2rem] w-[1.2rem] dark:text-zinc-950 text-zinc-200  duration-300 transform scale-100 group-hover:scale-110" />
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[525px]">
