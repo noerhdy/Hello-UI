@@ -20,8 +20,9 @@ const CardMain = () => {
         titleText2="Development"
       />
       <CardClick
-        defaultImg="./IMG/ayuki-wire.webp"
-        clickImg="./IMG/ayuki.webp"
+        defaultImg="./IMG/Frame1.jpg"
+        clickImg1="./IMG/ayuki-wire.webp"
+        clickImg2="./IMG/ayuki.webp"
         titleName="Ayuki (Single Page)"
         titleText="Design"
         titleText2="Development"
