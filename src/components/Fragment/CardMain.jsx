@@ -12,8 +12,9 @@ const CardMain = () => {
         </h2>
       </div>
       <CardClick
-        defaultImg="./IMG/zen-wire.webp"
-        clickImg="./IMG/zen.webp"
+        defaultImg="./IMG/sec10.webp"
+        clickImg1="./IMG/zen-wire.webp"
+        clickImg2="./IMG/zen.webp"
         titleName="Zen layout"
         titleText="Design"
         titleText2="Development"
