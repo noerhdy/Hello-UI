@@ -5,7 +5,7 @@ import CardClick from "../Elements/card/cardClick/CardClick";
 const CardMain = () => {
   return (
     <>
-      <div className="text-zinc-400 text-[12px] w-2/4 leading-5">
+      <div className="text-zinc-400 text-[0.75rem] sm:w-2/4 w-full leading-5">
         <h2>
           Some design experiments I learned and some I came up with and designed
           myself.
