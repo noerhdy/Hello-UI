@@ -54,11 +54,11 @@ const ClickImage = ({
         <h2 className="sm:text-[0.625rem] w-fit text-[0.375rem] text-zinc-500">
           Click on the image to change
         </h2>
-        <div className="flex justify-end space-x-2  text-[0.75rem] items-center">
-          <p className="px-2 py-1 bg-zinc-300 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-500  rounded-md">
+        <div className="flex justify-end space-x-2 sm:text-[0.75rem]  text-[0.375rem] items-center">
+          <p className="px-2 py-1 bg-zinc-300 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-500  sm:rounded-md rounded-sm">
             {titleText}
           </p>
-          <p className="px-2 py-1 bg-zinc-300 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-500 rounded-md">
+          <p className="px-2 py-1 bg-zinc-300 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-500 sm:rounded-md rounded-sm">
             {titleText2}
           </p>
         </div>
