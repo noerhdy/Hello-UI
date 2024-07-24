@@ -46,15 +46,15 @@ const ClickImage = ({
         className="object-cover aspect-video bg-center duration-500 ease-in-out rounded-lg "
       />
       <div className="flex mt-2 items-center justify-between ml-2 py-2">
-        <div className="text-[16px] ">
+        <div className="text-[1rem] ">
           <h2 className="font-medium text-zinc-800 dark:text-zinc-200">
             {titleName}
           </h2>
         </div>
-        <h2 className="text-[10px] text-zinc-500">
+        <h2 className="text-[0.625rem] text-zinc-500">
           Click on the image to change
         </h2>
-        <div className="flex justify-end space-x-2  text-[12px] items-center">
+        <div className="flex justify-end space-x-2  text-[0.75rem] items-center">
           <p className="px-2 py-1 bg-zinc-300 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-500  rounded-md">
             {titleText}
           </p>
