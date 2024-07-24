@@ -10,13 +10,12 @@ const CardClick = (props) => {
         defaultSrc={defaultImg}
         clickedSrc1={clickImg1}
         clickedSrc2={clickImg2}
+        titleText={titleText}
+        titleText2={titleText2}
+        titleName={titleName}
       />
       <div className="flex flex-row justify-between pl-2">
-        <ClickTitle
-          titleName={titleName}
-          titleText={titleText}
-          titleText2={titleText2}
-        />
+        <ClickTitle />
       </div>
     </div>
   );

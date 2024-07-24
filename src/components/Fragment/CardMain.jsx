@@ -5,7 +5,7 @@ import CardClick from "../Elements/card/cardClick/CardClick";
 const CardMain = () => {
   return (
     <>
-      <div className="text-zinc-400 w-2/3 font-mono items-center text-[12px]">
+      <div className="text-zinc-400 text-[12px] w-2/4 leading-5">
         <h2>
           Some design experiments I learned and some I came up with and designed
           myself.
@@ -15,7 +15,7 @@ const CardMain = () => {
         defaultImg="./IMG/zen-thumb.webp"
         clickImg1="./IMG/zen-wire.webp"
         clickImg2="./IMG/zen-dflt.webp"
-        titleName="Zen layout"
+        titleName="Zen "
         titleText="Design"
         titleText2="Development"
       />
@@ -23,7 +23,7 @@ const CardMain = () => {
         defaultImg="./IMG/ayukai-thumb.webp"
         clickImg1="./IMG/ayukai-wire.webp"
         clickImg2="./IMG/ayukai-dflt.webp"
-        titleName="Ayuki (Single Page)"
+        titleName="Ayukai "
         titleText="Design"
         titleText2="Development"
       />

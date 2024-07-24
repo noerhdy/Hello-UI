@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 
-const ClickImage = ({ defaultSrc, clickedSrc1, clickedSrc2, alt }) => {
+const ClickImage = ({
+  defaultSrc,
+  clickedSrc1,
+  clickedSrc2,
+  alt,
+  titleText,
+  titleText2,
+  titleName,
+}) => {
   const [isClicked, setIsClicked] = useState(false);
   const [currentSrc, setCurrentSrc] = useState(defaultSrc);
   const [loopCount, setLoopCount] = useState(0);
@@ -30,19 +38,30 @@ const ClickImage = ({ defaultSrc, clickedSrc1, clickedSrc2, alt }) => {
   }, [isClicked, loopCount, clickedSrc1, clickedSrc2]);
 
   return (
-    <div
-      className="relative p-4 rounded-md bg-zinc-200 cursor-pointer"
-      onClick={handleImageClick}
-    >
+    <div className="relative p-2 rounded-md dark:bg-zinc-900 bg-zinc-200 cursor-pointer">
       <img
+        onClick={handleImageClick}
         src={currentSrc}
         alt={alt}
-        className="object-cover aspect-video  drop-shadow-md bg-center duration-500 ease-in-out rounded-lg "
+        className="object-cover aspect-video bg-center duration-500 ease-in-out rounded-lg "
       />
-      <div className="flex ml-4 mt-2">
-        <h2 className="text-[10px] mt-1 text-zinc-500">
+      <div className="flex mt-2 items-center justify-between ml-2 py-2">
+        <div className="text-[16px] ">
+          <h2 className="font-medium text-zinc-800 dark:text-zinc-200">
+            {titleName}
+          </h2>
+        </div>
+        <h2 className="text-[10px] text-zinc-500">
           Click on the image to change
         </h2>
+        <div className="flex justify-end space-x-2  text-[12px] items-center">
+          <p className="px-2 py-1 bg-zinc-300 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-500  rounded-md">
+            {titleText}
+          </p>
+          <p className="px-2 py-1 bg-zinc-300 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-500 rounded-md">
+            {titleText2}
+          </p>
+        </div>
       </div>
     </div>
   );

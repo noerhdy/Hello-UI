@@ -14,9 +14,12 @@ export const HeadersPage = () => {
         </span>
       </div>
       <div className="sm:w-2/3 w-full  mt-8">
-        <h2 className="antialiased text-[12px] ">
-          Hi, I'm someone just starting out in the web development field, I'm
-          self-taught with a basic understanding of UI and graphic design.
+        <h2 className="antialiased text-[12px] leading-5 ">
+          Hi, I'm someone just starting out in the web development field. I'm
+          self-taught and have a basic understanding of UI and graphic design.
+          Whether I’m designing a website, product, or pitch deck, I always aim
+          to sweat the details. However, I also understand that sometimes done
+          is better than perfect.
         </h2>
       </div>
     </div>

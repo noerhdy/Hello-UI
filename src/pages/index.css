@@ -6,9 +6,8 @@
 
 body {
   -ms-overflow-style: none;
-  font-family: "Geist";
+  font-family: "Geist Variable";
 }
-/* For Geist Mono */
 ::-webkit-scrollbar {
   display: none;
 }
