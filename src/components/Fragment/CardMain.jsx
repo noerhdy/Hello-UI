@@ -18,6 +18,8 @@ const CardMain = () => {
         titleName="Zen "
         titleText="Design"
         titleText2="Development"
+        nameLink="view"
+        link="https://zen-layout.vercel.app/"
       />
       <CardClick
         defaultImg="./IMG/ayukai-thumb.webp"
@@ -26,23 +28,21 @@ const CardMain = () => {
         titleName="Ayukai "
         titleText="Design"
         titleText2="Development"
+        nameLink="view"
+        link="https://dub.sh/ayukai-darkly"
       />
       <CardIndex
         imgUrl="./IMG/sec9.webp"
-        titleName="Dhome (Landing Page)"
+        titleName="Dhome "
         titleText="Design"
       />
       <CardIndex
         imgUrl="./IMG/sec8.webp"
-        titleName="AS (Landing Page)"
+        titleName="Re-Compass"
         titleText="Design"
       />
-      <CardIndex
-        imgUrl="./IMG/af.webp"
-        titleName="AS (Landing Page)"
-        titleText="Design"
-      />
-      <div className="text-zinc-400 pt-12 w-2/3 font-mono items-center text-[12px]">
+
+      <div className="text-zinc-400 pt-12 w-2/3  text-[0.75rem]">
         <h2>Other</h2>
       </div>
     </>

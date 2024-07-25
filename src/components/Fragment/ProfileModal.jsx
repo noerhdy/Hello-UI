@@ -25,17 +25,23 @@ export function ProfileModal() {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[525px]">
         <DialogHeader>
-          <DialogTitle className="text-center">Profile</DialogTitle>
-          <DialogDescription className="text-center">
+          <DialogTitle className="text-center text-zinc-950 dark:text-zinc-50 text-[1rem]">
+            Profile
+          </DialogTitle>
+          <DialogDescription className="text-center text-zinc-950 dark:text-zinc-50 text-[0.875rem]">
             Check out my profile for more details
           </DialogDescription>
         </DialogHeader>
-        <div className="space-y-4">
+        <div className="max-h-[400px] overflow-y-auto space-y-4">
           <AccordionProfil />
           <AccordionTech />
         </div>
         <DialogFooter>
-          <Button type="button" onClick={() => setOpen(false)}>
+          <Button
+            variant="defaultModal"
+            type="button"
+            onClick={() => setOpen(false)}
+          >
             Close
           </Button>
         </DialogFooter>

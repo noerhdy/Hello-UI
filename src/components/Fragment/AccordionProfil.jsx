@@ -12,16 +12,23 @@ import CtaLink from "../Elements/Button/CtaLink";
 
 export function AccordionProfil() {
   return (
-    <Accordion type="single" collapsible className="relative w-full">
-      <AccordionItem value="item-1" className="bg-zinc-200 px-4 rounded-md">
+    <Accordion
+      type="single"
+      collapsible
+      className="relative w-full text-zinc-950 dark:text-zinc-50"
+    >
+      <AccordionItem
+        value="item-1"
+        className="bg-zinc-200 dark:bg-zinc-900 px-4 rounded-md"
+      >
         <AccordionTrigger>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 ">
             <User className="h-[1.2rem] w-[1.2rem] transition-all" />
-            <h1>Profil Information</h1>
+            <h1 className=" text-[0.875rem]">Profil Information</h1>
           </div>
         </AccordionTrigger>
         <AccordionContent>
-          <div className="flex flex-col border-t py-4 relative ">
+          <div className="flex flex-col border-t border-zinc-400 py-4 relative text-zinc-950 dark:text-zinc-50 ">
             {dataProfile.map((item, index) => (
               <div
                 key={index}

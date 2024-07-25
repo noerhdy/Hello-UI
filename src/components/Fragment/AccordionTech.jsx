@@ -9,8 +9,15 @@ import { Layers2 } from "lucide-react";
 
 export function AccordionTech() {
   return (
-    <Accordion type="single" collapsible className="w-full">
-      <AccordionItem value="item-1" className="bg-zinc-200 px-4 rounded-md">
+    <Accordion
+      type="single"
+      collapsible
+      className="w-full text-zinc-950 dark:text-zinc-50"
+    >
+      <AccordionItem
+        value="item-1"
+        className="bg-zinc-200 dark:bg-zinc-900 px-4 rounded-md"
+      >
         <AccordionTrigger className="">
           <div className="flex items-center space-x-2">
             <Layers2 className="h-[1.2rem] w-[1.2rem] transition-all" />
@@ -18,7 +25,7 @@ export function AccordionTech() {
           </div>
         </AccordionTrigger>
         <AccordionContent>
-          <div className="flex flex-col border-t py-4">
+          <div className="flex flex-col border-t border-zinc-400  py-4">
             {dataTech.map((item, index) => (
               <div key={index} className="flex items-center ">
                 <div className="flex justify-between w-full py-2 px-4">
