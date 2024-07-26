@@ -20,7 +20,7 @@ export function ProfileModal() {
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button size="icon" variant="default" onClick={() => setOpen(true)}>
-          <PanelBottomClose className="h-[1.2rem] w-[1.2rem] dark:text-zinc-950 text-zinc-200  duration-300 transform scale-100 group-hover:scale-110" />
+          <PanelBottomClose className="h-[1.2rem] w-[1.2rem] text-zinc-900 dark:text-blue-500  duration-300 transform scale-100 group-hover:scale-110" />
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[525px]">
@@ -38,7 +38,8 @@ export function ProfileModal() {
         </div>
         <DialogFooter>
           <Button
-            variant="defaultModal"
+            className="text-blue-500"
+            variant="default"
             type="button"
             onClick={() => setOpen(false)}
           >

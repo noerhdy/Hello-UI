@@ -5,11 +5,14 @@ import CardClick from "../Elements/card/cardClick/CardClick";
 const CardMain = () => {
   return (
     <>
-      <div className="text-zinc-400 text-[0.75rem] sm:w-2/4 w-full leading-5">
+      <div className="text-zinc-400 text-[0.875rem] sm:w-2/4 w-full leading-5 space-y-4">
         <h2>
           Some design experiments I learned and some I came up with and designed
           myself.
         </h2>
+        <div className="text-[0.875rem] font-medium text-neutral-950 dark:text-zinc-200">
+          <h2>Ui</h2>
+        </div>
       </div>
       <CardClick
         defaultImg="./IMG/zen-thumb.webp"
@@ -42,7 +45,7 @@ const CardMain = () => {
         titleText="Design"
       />
 
-      <div className="text-zinc-400 pt-12 w-2/3  text-[0.75rem]">
+      <div className="text-[0.875rem] font-medium text-neutral-950 dark:text-zinc-200">
         <h2>Other</h2>
       </div>
     </>

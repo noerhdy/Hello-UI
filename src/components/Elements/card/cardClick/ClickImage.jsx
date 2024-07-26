@@ -41,7 +41,7 @@ const ClickImage = ({
   }, [isClicked, loopCount, clickedSrc1, clickedSrc2]);
 
   return (
-    <div className="relative rounded-xl dark:bg-zinc-900 sm:p-4 p-0 bg-zinc-200 ">
+    <div className="relative rounded-xl dark:bg-zinc-900 sm:p-4 p-0 bg-zinc-100 drop-shadow-2xl">
       <div className="relative group">
         <img
           onClick={handleImageClick}

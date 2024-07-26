@@ -19,7 +19,7 @@ export function AccordionProfil() {
     >
       <AccordionItem
         value="item-1"
-        className="bg-zinc-200 dark:bg-zinc-900 px-4 rounded-md"
+        className="bg-zinc-100 dark:bg-zinc-900 px-4 rounded-md"
       >
         <AccordionTrigger>
           <div className="flex items-center space-x-2 ">

@@ -16,16 +16,16 @@ export function AccordionTech() {
     >
       <AccordionItem
         value="item-1"
-        className="bg-zinc-200 dark:bg-zinc-900 px-4 rounded-md"
+        className="bg-zinc-100 dark:bg-zinc-900 px-4 rounded-md"
       >
         <AccordionTrigger className="">
           <div className="flex items-center space-x-2">
             <Layers2 className="h-[1.2rem] w-[1.2rem] transition-all" />
-            <h1>Tech Stack</h1>
+            <h1 className=" text-[0.875rem]">Tech Stack</h1>
           </div>
         </AccordionTrigger>
         <AccordionContent>
-          <div className="flex flex-col border-t border-zinc-400  py-4">
+          <div className="flex flex-col border-t border-zinc-400 py-4 relative text-zinc-950 dark:text-zinc-50 ">
             {dataTech.map((item, index) => (
               <div key={index} className="flex items-center ">
                 <div className="flex justify-between w-full py-2 px-4">
