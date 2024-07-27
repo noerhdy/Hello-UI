@@ -2,7 +2,7 @@ const CardImage = (props) => {
   const { imgUrl, titleName, titleText } = props;
   return (
     <>
-      <div className="relative rounded-xl dark:bg-zinc-900 sm:p-4 p-0 bg-zinc-100 drop-shadow-2xl appearance-none ">
+      <div className="relative rounded-xl dark:bg-zinc-900 sm:p-4 p-0 bg-zinc-100 shadow-2xl appearance-none ">
         <img
           className="object-cover aspect-video bg-center duration-500 ease-in-out rounded-t-xl sm:rounded-lg"
           src={imgUrl}
