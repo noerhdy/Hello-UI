@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 function MarqueeSection() {
   return (
-    <div className="grid grid-cols-4 shadow-xl h-full rounded-xl py-6 my-6  dark:bg-zinc-900 bg-zinc-100">
+    <div className="grid grid-cols-4 appearance-none shadow-xl h-full rounded-xl py-6 my-6  dark:bg-zinc-900 bg-zinc-100">
       <div className="col-span-5 mx-4  ">
         <Marquee pauseOnClick={false} autoFill speed={50}>
           {marqImage.map((item, i) => (
