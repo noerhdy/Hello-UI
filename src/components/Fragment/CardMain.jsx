@@ -15,6 +15,26 @@ const CardMain = () => {
         </div>
       </div>
       <CardClick
+        defaultImg="./IMG/oatside-thumb.webp"
+        clickImg1="./IMG/oatside-wire.webp"
+        clickImg2="./IMG/oatside-dflt.webp"
+        titleName="Re-Oatside"
+        titleText="Design"
+        titleText2="Development"
+        nameLink="view"
+        link="https://re-oatside.vercel.app/"
+      />
+      <CardClick
+        defaultImg="./IMG/ayukai-thumb.webp"
+        clickImg1="./IMG/ayukai-wire.webp"
+        clickImg2="./IMG/ayukai-dflt.webp"
+        titleName="Ayukai"
+        titleText="Design"
+        titleText2="Development"
+        nameLink="view"
+        link="https://dub.sh/ayukai-darkly"
+      />
+      <CardClick
         defaultImg="./IMG/zen-thumb.webp"
         clickImg1="./IMG/zen-wire.webp"
         clickImg2="./IMG/zen-dflt.webp"
@@ -23,16 +43,6 @@ const CardMain = () => {
         titleText2="Development"
         nameLink="view"
         link="https://zen-layout.vercel.app/"
-      />
-      <CardClick
-        defaultImg="./IMG/ayukai-thumb.webp"
-        clickImg1="./IMG/ayukai-wire.webp"
-        clickImg2="./IMG/ayukai-dflt.webp"
-        titleName="Ayukai "
-        titleText="Design"
-        titleText2="Development"
-        nameLink="view"
-        link="https://dub.sh/ayukai-darkly"
       />
       <CardIndex
         imgUrl="./IMG/sec9.webp"

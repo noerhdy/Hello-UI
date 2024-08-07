@@ -45,7 +45,7 @@ export const dataTech = [
   },
   {
     item1: "Design Tools",
-    item2: "Figma and Photoshop",
+    item2: "Figma",
   },
 ];
 export const dataProfile = [
