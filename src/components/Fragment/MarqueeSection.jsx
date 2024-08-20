@@ -12,8 +12,9 @@ function MarqueeSection() {
               key={i}
               className="flex max-w-[220px] overflow-hidden rounded-md space-x-2"
             >
+              {/* jika ingin menambahkan efek hover black tambahkan: group grayscale brightness-50 over:filter-none  */}
               <img
-                className="group rounded-lg grayscale overflow-hidden max-w-[180px] mx-1  brightness-50 ease-in-out duration-500 bg-center hover:filter-none bg-cover "
+                className=" rounded-lg  overflow-hidden max-w-[180px] mx-1  ease-in-out duration-500 bg-center bg-cover dark:border-none border border-zinc-900/10"
                 src={item.image}
               ></img>
             </div>

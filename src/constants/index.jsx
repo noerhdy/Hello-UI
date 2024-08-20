@@ -2,32 +2,28 @@ export const marqImage = [
   {
     id: 1,
     title: "Black",
-    image: "/IMG/marquee/thumb1.webp",
+    image: "/IMG/marquee/design-1.webp",
   },
   {
     id: 2,
     title: "Matcha",
-    image: "/IMG/marquee/thumb2.webp",
+    image: "/IMG/marquee/design-2.webp",
   },
-  {
-    id: 3,
-    title: "Necta",
-    image: "/IMG/marquee/thumb3.webp",
-  },
+
   {
     id: 4,
     title: "Black",
-    image: "/IMG/marquee/thumb8.webp",
+    image: "/IMG/marquee/design-3.webp",
   },
   {
     id: 5,
     title: "Matcha",
-    image: "/IMG/marquee/thumb7.webp",
+    image: "/IMG/marquee/design-4.webp",
   },
   {
     id: 6,
     title: "Necta",
-    image: "/IMG/marquee/thumb6.webp",
+    image: "/IMG/marquee/design-5.webp",
   },
 ];
 export const dataTech = [
