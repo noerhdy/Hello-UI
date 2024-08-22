@@ -25,6 +25,11 @@ export const marqImage = [
     title: "Necta",
     image: "/IMG/marquee/design-5.webp",
   },
+  {
+    id: 7,
+    title: "Necta",
+    image: "/IMG/marquee/design-6.webp",
+  },
 ];
 export const dataTech = [
   {
