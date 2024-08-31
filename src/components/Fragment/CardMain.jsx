@@ -1,6 +1,8 @@
 import React from "react";
 import CardIndex from "../Elements/card/cardNormal/CardIndex";
 import CardClick from "../Elements/card/cardClick/CardClick";
+import CardClick2 from "../Elements/card/cardClick2/CardNoClick";
+import CardNoClick from "../Elements/card/cardClick2/CardNoClick";
 
 const CardMain = () => {
   return (
@@ -14,6 +16,22 @@ const CardMain = () => {
           <h2>Ui</h2>
         </div>
       </div>
+      <CardNoClick
+        imgUrl="./IMG/zen-dflt.webp"
+        titleName="Zen"
+        titleText="Design"
+        titleText2="Development"
+        nameLink="view"
+        link="https://dub.sh/zen-layout"
+      />
+      <CardNoClick
+        imgUrl="./IMG/moondrop-dflt.webp"
+        titleName="Moondrop"
+        titleText="Design"
+        titleText2="Development"
+        nameLink="view"
+        link="https://dub.sh/moondrop-st"
+      />
       <CardClick
         defaultImg="./IMG/oatside-thumb.webp"
         clickImg1="./IMG/oatside-wire.webp"
@@ -22,7 +40,7 @@ const CardMain = () => {
         titleText="Design"
         titleText2="Development"
         nameLink="view"
-        link="https://re-oatside.vercel.app/"
+        link="https://dub.sh/re-oatside"
       />
       <CardClick
         defaultImg="./IMG/ayukai-thumb.webp"
@@ -33,16 +51,6 @@ const CardMain = () => {
         titleText2="Development"
         nameLink="view"
         link="https://dub.sh/ayukai-darkly"
-      />
-      <CardClick
-        defaultImg="./IMG/zen-thumb.webp"
-        clickImg1="./IMG/zen-wire.webp"
-        clickImg2="./IMG/zen-dflt.webp"
-        titleName="Zen "
-        titleText="Design"
-        titleText2="Development"
-        nameLink="view"
-        link="https://zen-layout.vercel.app/"
       />
       <CardIndex
         imgUrl="./IMG/sec9.webp"

@@ -1,33 +1,33 @@
 export const marqImage = [
   {
     id: 1,
-    title: "Black",
+    title: "Mantra",
     image: "/IMG/marquee/design-1.webp",
   },
   {
     id: 2,
-    title: "Matcha",
+    title: "Disaster",
     image: "/IMG/marquee/design-2.webp",
   },
 
   {
-    id: 4,
-    title: "Black",
+    id: 3,
+    title: "Darkside",
     image: "/IMG/marquee/design-3.webp",
   },
   {
-    id: 5,
-    title: "Matcha",
+    id: 4,
+    title: "TGF2",
     image: "/IMG/marquee/design-4.webp",
   },
   {
-    id: 6,
-    title: "Necta",
+    id: 5,
+    title: "Wallflower",
     image: "/IMG/marquee/design-5.webp",
   },
   {
-    id: 7,
-    title: "Necta",
+    id: 6,
+    title: "WaveOff",
     image: "/IMG/marquee/design-6.webp",
   },
 ];
