@@ -8,6 +8,10 @@ body {
   -ms-overflow-style: none;
   font-family: "Geist Variable";
 }
+
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+}
 ::-webkit-scrollbar {
   display: none;
 }

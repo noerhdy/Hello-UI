@@ -52,16 +52,18 @@ const CardMain = () => {
         nameLink="view"
         link="https://dub.sh/ayukai-darkly"
       />
-      <CardIndex
-        imgUrl="./IMG/sec9.webp"
-        titleName="Dhome "
-        titleText="Design"
-      />
-      <CardIndex
-        imgUrl="./IMG/sec8.webp"
-        titleName="Re-Compass"
-        titleText="Design"
-      />
+      <div className="flex gap-4">
+        <CardIndex
+          imgUrl="./IMG/sec9.webp"
+          titleName="Dhome "
+          titleText="Design"
+        />
+        <CardIndex
+          imgUrl="./IMG/sec8.webp"
+          titleName="Re-Compass"
+          titleText="Design"
+        />
+      </div>
 
       <div className="text-[0.875rem] font-medium text-neutral-950 dark:text-zinc-200">
         <h2>Other</h2>
