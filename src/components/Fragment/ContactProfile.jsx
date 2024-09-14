@@ -1,6 +1,12 @@
 import React from "react";
 import * as Icons from "lucide-react";
 import { dataContact } from "@/constants";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const ContactList = () => {
   const handleClick = (url) => {
@@ -8,28 +14,37 @@ const ContactList = () => {
   };
 
   return (
-    <div className="flex space-x-4 relative z-50">
-      {dataContact.map((contact, index) => {
-        const IconComponent =
-          Icons[contact.icon.charAt(0).toUpperCase() + contact.icon.slice(1)];
+    <TooltipProvider>
+      <div className="flex space-x-4 relative z-50">
+        {dataContact.map((contact, index) => {
+          // Dynamically get the icon component from lucide-react
+          const IconComponent =
+            Icons[contact.icon.charAt(0).toUpperCase() + contact.icon.slice(1)];
 
-        return (
-          <div key={index} className="relative group flex items-center">
-            <button
-              onClick={() => handleClick(contact.url)}
-              className="relative flex items-center bg-transparent border-none p-0"
-            >
-              {IconComponent && (
-                <IconComponent className="w-4 h-4 transition-transform duration-300 group-hover:scale-125 z-50" />
-              )}
-            </button>
-            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 text-white text-[12px] opacity-0 group-hover:opacity-100 bg-blue-500 p-1 px-2 rounded-md transition-opacity duration-300 z-50">
-              {contact.name}
-            </span>
-          </div>
-        );
-      })}
-    </div>
+          return (
+            <Tooltip key={index}>
+              <TooltipTrigger>
+                <div className="relative group flex items-center">
+                  <button
+                    onClick={() => handleClick(contact.url)}
+                    className="relative flex items-center bg-transparent border-none p-0"
+                  >
+                    {IconComponent && (
+                      <IconComponent className="w-4 h-4 transition-transform duration-300 group-hover:scale-125 z-50" />
+                    )}
+                  </button>
+                </div>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="dark:text-blue-600 text-black font-semibold">
+                  {contact.name}
+                </p>
+              </TooltipContent>
+            </Tooltip>
+          );
+        })}
+      </div>
+    </TooltipProvider>
   );
 };
 

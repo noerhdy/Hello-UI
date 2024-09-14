@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
@@ -12,14 +11,10 @@ import CtaLink from "../Elements/Button/CtaLink";
 
 export function AccordionProfil() {
   return (
-    <Accordion
-      type="single"
-      collapsible
-      className="relative w-full text-zinc-950 dark:text-zinc-50"
-    >
+    <div className="relative w-full text-zinc-950 py-1 dark:text-zinc-50">
       <AccordionItem
         value="item-1"
-        className="bg-zinc-100 dark:bg-zinc-900 px-4 rounded-md"
+        className="bg-zinc-200 dark:bg-zinc-950 px-4  rounded-md"
       >
         <AccordionTrigger>
           <div className="flex items-center space-x-2 ">
@@ -28,26 +23,26 @@ export function AccordionProfil() {
           </div>
         </AccordionTrigger>
         <AccordionContent>
-          <div className="flex flex-col border-t border-zinc-400 py-4 relative text-zinc-950 dark:text-zinc-50 ">
+          <div className="flex flex-col border-t border-zinc-400 py-4 relative gap-4 text-zinc-950 dark:text-zinc-50 ">
             {dataProfile.map((item, index) => (
               <div
                 key={index}
                 className="flex flex-row space-x-2 text-sm items-center"
               >
-                <div className="flex justify-between py-2 px-4 items-center w-full">
+                <div className="flex justify-between  pr-4 items-center w-full">
                   <h2>{item.item1}</h2>
                   <h2>{item.item2}</h2>
                 </div>
               </div>
             ))}
 
-            <div className="flex justify-between w-full py-2 px-4 items-center">
+            <div className="flex justify-between w-full items-center">
               <h2>Contact</h2>
-              <div className="z-50 absolute  right-4">
+              <div className="z-50 absolute right-4">
                 <ContactList />
               </div>
             </div>
-            <div className="flex justify-between w-full  py-2 px-4 ">
+            <div className="flex justify-between w-full pr-4">
               <h2>CV</h2>
               <div className="text-end items-center ">
                 <div className="text-zinc-400 flex items-center text-sm">
@@ -61,6 +56,6 @@ export function AccordionProfil() {
           </div>
         </AccordionContent>
       </AccordionItem>
-    </Accordion>
+    </div>
   );
 }

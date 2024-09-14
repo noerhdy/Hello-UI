@@ -1,5 +1,4 @@
 import {
-  Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
@@ -9,14 +8,10 @@ import { Layers2 } from "lucide-react";
 
 export function AccordionTech() {
   return (
-    <Accordion
-      type="single"
-      collapsible
-      className="w-full text-zinc-950 dark:text-zinc-50"
-    >
+    <div className="w-full text-zinc-950 py-1 dark:text-zinc-50">
       <AccordionItem
-        value="item-1"
-        className="bg-zinc-100 dark:bg-zinc-900 px-4 rounded-md"
+        value="item-2"
+        className="bg-zinc-200 dark:bg-zinc-950 px-4 rounded-md"
       >
         <AccordionTrigger className="">
           <div className="flex items-center space-x-2">
@@ -25,10 +20,10 @@ export function AccordionTech() {
           </div>
         </AccordionTrigger>
         <AccordionContent>
-          <div className="flex flex-col border-t border-zinc-400 py-4 relative text-zinc-950 dark:text-zinc-50 ">
+          <div className="flex flex-col border-t border-zinc-400 gap-4 py-4 relative text-zinc-950 dark:text-zinc-50 ">
             {dataTech.map((item, index) => (
               <div key={index} className="flex items-center ">
-                <div className="flex justify-between w-full py-2 px-4">
+                <div className="flex justify-between w-full  ">
                   <h2>{item.item1}</h2>
                   <h2>{item.item2}</h2>
                 </div>
@@ -37,6 +32,6 @@ export function AccordionTech() {
           </div>
         </AccordionContent>
       </AccordionItem>
-    </Accordion>
+    </div>
   );
 }
