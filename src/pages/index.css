@@ -9,7 +9,7 @@ body {
   font-family: "Geist Variable";
 }
 
-.scrolling-wrapper {
+/* .scrolling-wrapper {
   -webkit-overflow-scrolling: touch;
 }
 ::-webkit-scrollbar {
@@ -17,4 +17,4 @@ body {
 }
 html {
   scrollbar-width: none;
-}
+} */

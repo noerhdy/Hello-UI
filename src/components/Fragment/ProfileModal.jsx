@@ -27,7 +27,7 @@ const ProfileModal = ({ isVisible, onClose }) => {
           >
             <div className="flex flex-col  justify-end  min-h-screen items-center sm:items-center sm:justify-center">
               <div className="w-full max-w-screen-sm px-0 sm:px-6 ">
-                <div className="flex flex-col w-full items-center sm:rounded-[1rem] pb-12 rounded-none rounded-t-[1rem] shadow-xl text-zinc-950  dark:text-zinc-50 py-2 bg-zinc-100 dark:bg-zinc-900 px-4">
+                <div className="flex flex-col w-full items-center sm:rounded-[1rem] pb-24 sm:pb-12 rounded-none rounded-t-[1rem] shadow-xl text-zinc-950  dark:text-zinc-50 py-2 bg-zinc-100 dark:bg-zinc-900 px-4">
                   <div className="flex justify-between  w-full gap-2 py-4">
                     <div className="flex flex-col items-start  w-full gap-2 ">
                       <h1 className=" text-[1rem] font-medium">Profile</h1>

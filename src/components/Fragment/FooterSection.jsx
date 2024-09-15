@@ -1,6 +1,6 @@
 import React from "react";
 
-const TechSection = () => {
+const FooterSection = () => {
   return (
     <>
       <div className="text-zinc-400 dark:text-zinc-700 flex pb-24 justify-between items-center py-2">
@@ -11,4 +11,4 @@ const TechSection = () => {
   );
 };
 
-export default TechSection;
+export default FooterSection;

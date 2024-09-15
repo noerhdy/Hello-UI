@@ -1,4 +1,4 @@
-export const marqImage = [
+export const cardImage = [
   {
     id: 1,
     title: "Mantra",
@@ -29,6 +29,26 @@ export const marqImage = [
     id: 6,
     title: "WaveOff",
     image: "/IMG/marquee/design-6.webp",
+  },
+  {
+    id: 7,
+    title: "WaveOff",
+    image: "/IMG/marquee/ui.webp",
+  },
+  {
+    id: 8,
+    title: "WaveOff",
+    image: "/IMG/marquee/ui2.webp",
+  },
+  {
+    id: 9,
+    title: "WaveOff",
+    image: "/IMG/marquee/ui3.webp",
+  },
+  {
+    id: 10,
+    title: "WaveOff",
+    image: "/IMG/marquee/ui4.webp",
   },
 ];
 export const dataTech = [

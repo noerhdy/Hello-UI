@@ -3,6 +3,7 @@ import CardIndex from "../Elements/card/cardNormal/CardIndex";
 import CardClick from "../Elements/card/cardClick/CardClick";
 import CardClick2 from "../Elements/card/cardClick2/CardNoClick";
 import CardNoClick from "../Elements/card/cardClick2/CardNoClick";
+import CardSection from "./CardSection";
 
 const CardMain = () => {
   return (
@@ -12,9 +13,9 @@ const CardMain = () => {
           Some design experiments I learned and some I came up with and designed
           myself.
         </h2>
-        <div className="text-[0.875rem] font-medium text-neutral-950 dark:text-zinc-200">
+        {/* <div className="text-[0.875rem] font-medium text-neutral-950 dark:text-zinc-200">
           <h2>Ui</h2>
-        </div>
+        </div> */}
       </div>
       <CardNoClick
         imgUrl="./IMG/zen-dflt.webp"
@@ -52,21 +53,20 @@ const CardMain = () => {
         nameLink="view"
         link="https://dub.sh/ayukai-darkly"
       />
-      <div className="flex gap-4">
-        <CardIndex
-          imgUrl="./IMG/sec9.webp"
-          titleName="Dhome "
-          titleText="Design"
-        />
-        <CardIndex
-          imgUrl="./IMG/sec8.webp"
-          titleName="Re-Compass"
-          titleText="Design"
-        />
-      </div>
-
-      <div className="text-[0.875rem] font-medium text-neutral-950 dark:text-zinc-200">
+      <div className="text-[0.875rem]  gap-2  flex flex-col font-medium text-neutral-950 dark:text-zinc-200">
         <h2>Other</h2>
+        <CardSection
+          slidePerView={1.8}
+          startId={7}
+          endId={10}
+          aspect="size-full"
+        />
+        <CardSection
+          slidePerView={2.2}
+          startId={1}
+          endId={6}
+          aspect="aspect-square"
+        />
       </div>
     </>
   );

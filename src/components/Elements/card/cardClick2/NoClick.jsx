@@ -16,6 +16,7 @@ const NoClick = ({
           src={imgUrl}
           alt={alt}
           className="object-cover aspect-video bg-center duration-500 ease-in-out rounded-t-xl sm:rounded-lg cursor-default"
+          draggable="false"
         />
       </div>
       <div className="flex justify-between items-center sm:mx-0 mx-4 sm:py-2 py-4">

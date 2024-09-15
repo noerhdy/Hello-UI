@@ -48,6 +48,7 @@ const ClickImage = ({
           src={currentSrc}
           alt={alt}
           className="object-cover aspect-video bg-center duration-500 ease-in-out rounded-t-xl sm:rounded-lg cursor-pointer"
+          draggable="false"
         />
         <h2
           className={`absolute bottom-1 ml-2 px-2 py-1 rounded-md bg-zinc-800/80 sm:text-[0.75rem] w-fit text-[0.625rem] text-zinc-300 duration-300 ease-in-out ${

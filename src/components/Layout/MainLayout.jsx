@@ -1,9 +1,7 @@
 import React from "react";
-
 import { HeadersPage } from "../Fragment/HeadersPage";
-import TechSection from "../Fragment/TechSection";
+import FooterSection from "../Fragment/FooterSection";
 import CardMain from "../Fragment/CardMain";
-import MarqueeSection from "../Fragment/MarqueeSection";
 import NavDoc from "../NavDoc";
 
 const MainLayout = () => {
@@ -12,8 +10,7 @@ const MainLayout = () => {
       <main className="w-full max-w-screen-sm px-6">
         <HeadersPage />
         <CardMain />
-        <MarqueeSection />
-        <TechSection />
+        <FooterSection />
         <NavDoc />
       </main>
     </div>
