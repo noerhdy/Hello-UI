@@ -26,8 +26,8 @@ const NavDoc = () => {
 
   return (
     <TooltipProvider>
-      <div className="fixed inset-x-0 bottom-0 flex h-16 mb-2 items-center z-50">
-        <div className="mx-auto relative flex h-[64px] items-end gap-4 md:gap-2 rounded-2xl backdrop-blur-sm backdrop-filter  bg-gradient-to-t from-zinc-950/5 dark:bg-gradient-to-t dark:from-neutral-100/5 from-5% px-6 pb-2 dark:bg-zinc-900/5 md:px-4">
+      <div className="fixed inset-x-0 bottom-0 flex h-16  justify-center items-center px-6 z-50">
+        <div className=" relative flex  items-center justify-center gap-4  md:gap-2 rounded-xl backdrop-blur-sm backdrop-filter bg-gradient-to-t from-zinc-950/5 dark:bg-gradient-to-t dark:from-neutral-100/5 from-5% py-2 dark:bg-zinc-900/10  w-full max-w-screen-sm">
           {/* PROFIL */}
           <div className="relative flex justify-center">
             <Tooltip>

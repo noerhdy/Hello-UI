@@ -29,7 +29,7 @@ export function AccordionProfil() {
                 key={index}
                 className="flex flex-row space-x-2 text-sm items-center"
               >
-                <div className="flex justify-between  pr-4 items-center w-full">
+                <div className="flex justify-between pr-4 items-center w-full">
                   <h2>{item.item1}</h2>
                   <h2>{item.item2}</h2>
                 </div>

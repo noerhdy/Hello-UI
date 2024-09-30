@@ -30,7 +30,7 @@ const ContactList = () => {
                     className="relative flex items-center bg-transparent border-none p-0"
                   >
                     {IconComponent && (
-                      <IconComponent className="w-4 h-4 transition-transform duration-300 group-hover:scale-125 z-50" />
+                      <IconComponent className="w-4 h-4 text-blue-600 hover:text-blue-400 ease-in-out transition-transform duration-300 group-hover:scale-125 z-50" />
                     )}
                   </button>
                 </div>
