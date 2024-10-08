@@ -18,12 +18,12 @@ const CardMain = () => {
         </div> */}
       </div>
       <CardNoClick
-        imgUrl="./IMG/zen-dflt.webp"
-        titleName="Zen"
+        imgUrl="./IMG/disarray-dflt.webp"
+        titleName="Disarray"
         titleText="Design"
         titleText2="Development"
         nameLink="view"
-        link="https://dub.sh/zen-layout"
+        link="https://dub.sh/disarray-co"
       />
       <CardNoClick
         imgUrl="./IMG/moondrop-dflt.webp"
