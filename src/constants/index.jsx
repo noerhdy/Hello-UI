@@ -78,10 +78,10 @@ export const dataProfile = [
     item1: "Location",
     item2: "Surabaya, ID",
   },
-  {
-    item1: "Date of birth",
-    item2: "Oct 21, 1998",
-  },
+  // {
+  //   item1: "Date of birth",
+  //   item2: "Oct 21, 1998",
+  // },
 ];
 export const dataContact = [
   {
