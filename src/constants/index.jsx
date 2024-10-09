@@ -100,7 +100,7 @@ export const dataContact = [
     name: "Twitter",
     url: "https://twitter.com/Noer1114",
     src: "/img/app/x.webp",
-    icon: "twitter",
+    icon: "xTwitter",
   },
   {
     name: "Gmail",

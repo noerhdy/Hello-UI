@@ -1,5 +1,6 @@
 import React from "react";
-import * as Icons from "lucide-react";
+import * as Icons from "lucide-react"; // for other icons
+import { FaXTwitter } from "react-icons/fa6"; // specifically import the X/Twitter icon
 import { dataContact } from "@/constants";
 import {
   Tooltip,
@@ -17,9 +18,13 @@ const ContactList = () => {
     <TooltipProvider>
       <div className="flex space-x-4 relative z-50">
         {dataContact.map((contact, index) => {
-          // Dynamically get the icon component from lucide-react
+          // Special case for Twitter/X icon
           const IconComponent =
-            Icons[contact.icon.charAt(0).toUpperCase() + contact.icon.slice(1)];
+            contact.icon === "xTwitter"
+              ? FaXTwitter
+              : Icons[
+                  contact.icon.charAt(0).toUpperCase() + contact.icon.slice(1)
+                ];
 
           return (
             <Tooltip key={index}>
