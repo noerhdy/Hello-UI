@@ -42,7 +42,7 @@ export function AccordionProfil() {
                 <ContactList />
               </div>
             </div>
-            <div className="flex justify-between w-full pr-4">
+            {/* <div className="flex justify-between w-full pr-4">
               <h2>CV</h2>
               <div className="text-end items-center ">
                 <div className="text-zinc-400 flex items-center text-sm">
@@ -52,7 +52,7 @@ export function AccordionProfil() {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </AccordionContent>
       </AccordionItem>

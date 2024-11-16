@@ -84,28 +84,34 @@ export const dataProfile = [
   // },
 ];
 export const dataContact = [
+  // {
+  //   name: "Github",
+  //   url: "https://github.com/noerhdy",
+  //   src: "/img/app/git.webp",
+  //   icon: "github",
+  // },
   {
-    name: "Github",
-    url: "https://github.com/noerhdy",
-    src: "/img/app/git.webp",
-    icon: "github",
+    name: "Instagram",
+    url: "https://www.instagram.com/noerhdt/",
+    // src: "/img/app/git.webp",
+    icon: "instagram",
   },
   {
     name: "Linkedin",
     url: "https://www.linkedin.com/in/nur-hidayat21/",
-    src: "/img/app/in.webp",
+    // src: "/img/app/in.webp",
     icon: "linkedin",
   },
-  {
-    name: "Twitter",
-    url: "https://twitter.com/Noer1114",
-    src: "/img/app/x.webp",
-    icon: "xTwitter",
-  },
+  // {
+  //   name: "Twitter",
+  //   url: "https://twitter.com/Noer1114",
+  //   src: "/img/app/x.webp",
+  //   icon: "xTwitter",
+  // },
   {
     name: "Gmail",
     url: "https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=hidayatnoer11@gmail.com",
-    src: "/img/app/gm.webp",
+    // src: "/img/app/gm.webp",
     icon: "mail",
   },
 ];
