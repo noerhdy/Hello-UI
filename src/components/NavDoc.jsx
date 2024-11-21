@@ -76,7 +76,7 @@ const NavDoc = () => {
                   variant="default"
                   onClick={() =>
                     handleClick(
-                      "https://drive.google.com/file/d/1pzsIVCogjO_yqr8Atjo1in0_Hi8s-zXG/view?usp=sharing"
+                      "https://drive.google.com/file/d/1jttN-8rL-foksa1eHyg5vxvllNDpKdL9/view?usp=sharing"
                     )
                   }
                 >
