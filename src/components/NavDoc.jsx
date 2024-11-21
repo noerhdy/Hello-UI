@@ -9,6 +9,7 @@ import {
 import { Button } from "./ui/button";
 import { PanelBottomClose } from "lucide-react";
 import ProfileModal from "./Fragment/ProfileModal";
+import CtaLink from "./Elements/Button/CtaLink";
 
 const NavDoc = () => {
   // State untuk mengelola visibilitas ProfileModal
@@ -23,31 +24,14 @@ const NavDoc = () => {
   const closeProfileModal = () => {
     setProfileModalVisible(false);
   };
+  const handleClick = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <TooltipProvider>
-      <div className="fixed inset-x-0 bottom-0 flex h-16  justify-center items-center px-6 z-50">
+      <div className="fixed inset-x-0 bottom-0 z-50 flex items-center justify-center h-16 px-6">
         <div className=" relative flex  items-center justify-center gap-4  md:gap-2 rounded-xl backdrop-blur-sm backdrop-filter bg-gradient-to-t from-zinc-950/5 dark:bg-gradient-to-t dark:from-neutral-100/5 from-5% py-2 dark:bg-zinc-900/10  w-full max-w-screen-sm">
-          {/* PROFIL */}
-          <div className="relative flex justify-center">
-            <Tooltip>
-              <TooltipTrigger>
-                <Button
-                  size="icon"
-                  variant="default"
-                  onClick={openProfileModal} // Membuka modal saat button ditekan
-                >
-                  <PanelBottomClose className="h-[1.2rem] w-[1.2rem] text-zinc-900 dark:text-blue-500  duration-300 transform scale-100 group-hover:scale-110" />
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p className="dark:text-blue-600 text-black font-semibold">
-                  Profil
-                </p>
-              </TooltipContent>
-            </Tooltip>
-          </div>
-
           {/* SWITCH TOGGLE */}
           <div className="relative flex justify-center">
             <Tooltip>
@@ -55,8 +39,53 @@ const NavDoc = () => {
                 <ModeToggle />
               </TooltipTrigger>
               <TooltipContent>
-                <p className="dark:text-blue-600 text-black font-semibold">
+                <p className="font-semibold text-black dark:text-blue-600">
                   Switch
+                </p>
+              </TooltipContent>
+            </Tooltip>
+          </div>
+
+          {/* PROFIL */}
+          <div className="relative flex justify-center">
+            <Tooltip>
+              <TooltipTrigger>
+                <Button
+                  size="icon"
+                  variant="default"
+                  onClick={openProfileModal}
+                >
+                  <PanelBottomClose className="h-[1.2rem] w-[1.2rem] text-zinc-900 dark:text-blue-500  duration-300 transform scale-100 group-hover:scale-110" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="font-semibold text-black dark:text-blue-600">
+                  Profil
+                </p>
+              </TooltipContent>
+            </Tooltip>
+          </div>
+
+          {/* PORTFOLIO IDN */}
+          <div className="relative flex justify-center">
+            <Tooltip>
+              <TooltipTrigger>
+                <Button
+                  className="w-full px-4 text-blue-600 hover:text-blue-500 "
+                  size="icon"
+                  variant="default"
+                  onClick={() =>
+                    handleClick(
+                      "https://drive.google.com/file/d/1pzsIVCogjO_yqr8Atjo1in0_Hi8s-zXG/view?usp=sharing"
+                    )
+                  }
+                >
+                  Portfolio (ID)
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="font-semibold text-black dark:text-blue-600">
+                  Lihat Portfolio (Bahasa Indonesia)
                 </p>
               </TooltipContent>
             </Tooltip>

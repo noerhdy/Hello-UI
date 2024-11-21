@@ -10,9 +10,9 @@ const CtaLink = (props) => {
   return (
     <button
       onClick={() => handleClick(link)}
-      className="flex group items-center group space-x-1 text-zinc-950 dark:text-zinc-50"
+      className="flex items-center space-x-1 group text-zinc-950 dark:text-zinc-50"
     >
-      <h3 className="  text-blue-500 translate-x-5 group-hover:translate-x-0 ease-in-out duration-200 ">
+      <h3 className="text-blue-500 duration-200 ease-in-out translate-x-5  group-hover:translate-x-0">
         {nameLink}
       </h3>
       <ArrowUpRight size={20} className={` ${arrowHover}`} />
