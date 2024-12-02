@@ -76,7 +76,7 @@ const NavDoc = () => {
                   variant="default"
                   onClick={() =>
                     handleClick(
-                      "https://drive.google.com/file/d/1jttN-8rL-foksa1eHyg5vxvllNDpKdL9/view?usp=sharing"
+                      "https://dub.sh/ggl.portfolio"
                     )
                   }
                 >
