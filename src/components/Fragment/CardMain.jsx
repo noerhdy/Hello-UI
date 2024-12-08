@@ -53,21 +53,21 @@ const CardMain = () => {
         nameLink="view"
         link="https://dub.sh/ayukai-darkly"
       />
-      <div className="text-[0.875rem]  gap-2  flex flex-col font-medium text-neutral-950 dark:text-zinc-200">
+      {/* <div className="text-[0.875rem]  gap-2  flex flex-col font-medium text-neutral-950 dark:text-zinc-200">
         <h2>Other</h2>
         <CardSection
           slidePerView={1.8}
           startId={7}
           endId={10}
           aspect="size-full"
-        />
+        /> 
         <CardSection
           slidePerView={2.2}
           startId={1}
           endId={6}
           aspect="aspect-square"
         />
-      </div>
+      </div> */}
     </>
   );
 };

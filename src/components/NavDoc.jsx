@@ -7,7 +7,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Button } from "./ui/button";
-import { PanelBottomClose } from "lucide-react";
+import { PanelBottomClose, Dribbble } from "lucide-react";
 import ProfileModal from "./Fragment/ProfileModal";
 import CtaLink from "./Elements/Button/CtaLink";
 
@@ -31,7 +31,7 @@ const NavDoc = () => {
   return (
     <TooltipProvider>
       <div className="fixed inset-x-0 bottom-0 z-50 flex items-center justify-center h-16 px-6">
-        <div className=" relative flex  items-center justify-center gap-4  md:gap-2 rounded-xl backdrop-blur-sm backdrop-filter bg-gradient-to-t from-zinc-950/5 dark:bg-gradient-to-t dark:from-neutral-100/5 from-5% py-2 dark:bg-zinc-900/10  w-full max-w-screen-sm">
+        <div className=" relative flex  items-center justify-center gap-2  md:gap-2 rounded-xl backdrop-blur-sm backdrop-filter bg-gradient-to-t from-zinc-950/5 dark:bg-gradient-to-t dark:from-neutral-100/5 from-5% py-2 dark:bg-zinc-900/10  w-full max-w-screen-sm">
           {/* SWITCH TOGGLE */}
           <div className="relative flex justify-center">
             <Tooltip>
@@ -61,6 +61,25 @@ const NavDoc = () => {
               <TooltipContent>
                 <p className="font-semibold text-black dark:text-blue-600">
                   Profil
+                </p>
+              </TooltipContent>
+            </Tooltip>
+          </div>
+          {/* Dribble */}
+          <div className="relative flex justify-center">
+            <Tooltip>
+              <TooltipTrigger>
+                <Button
+                  size="icon"
+                  variant="default"
+                  onClick={() => handleClick("https://dribbble.com/noerhdt")}
+                >
+                  <Dribbble className="h-[1.2rem] w-[1.2rem] text-zinc-900 dark:text-blue-500  duration-300 transform scale-100 group-hover:scale-110" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="font-semibold text-black dark:text-blue-600">
+                  Dribble
                 </p>
               </TooltipContent>
             </Tooltip>
